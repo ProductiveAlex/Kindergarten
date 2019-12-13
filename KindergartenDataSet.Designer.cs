@@ -444,7 +444,7 @@ namespace Kindergarten {
             
             private global::System.Data.DataColumn columnФИО;
             
-            private global::System.Data.DataColumn columnАдресс;
+            private global::System.Data.DataColumn columnАдрес;
             
             private global::System.Data.DataColumn columnТелефон;
             
@@ -501,9 +501,9 @@ namespace Kindergarten {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn АдрессColumn {
+            public global::System.Data.DataColumn АдресColumn {
                 get {
-                    return this.columnАдресс;
+                    return this.columnАдрес;
                 }
             }
             
@@ -560,12 +560,12 @@ namespace Kindergarten {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public ВоспитателиRow AddВоспитателиRow(string ФИО, string Адресс, string Телефон, ГруппаRow parentГруппаRowByГруппаВоспитатели) {
+            public ВоспитателиRow AddВоспитателиRow(string ФИО, string Адрес, string Телефон, ГруппаRow parentГруппаRowByГруппаВоспитатели) {
                 ВоспитателиRow rowВоспитателиRow = ((ВоспитателиRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         ФИО,
-                        Адресс,
+                        Адрес,
                         Телефон,
                         null};
                 if ((parentГруппаRowByГруппаВоспитатели != null)) {
@@ -602,7 +602,7 @@ namespace Kindergarten {
             internal void InitVars() {
                 this.columnКод_воспитателя = base.Columns["Код воспитателя"];
                 this.columnФИО = base.Columns["ФИО"];
-                this.columnАдресс = base.Columns["Адресс"];
+                this.columnАдрес = base.Columns["Адрес"];
                 this.columnТелефон = base.Columns["Телефон"];
                 this.columnКод_группы = base.Columns["Код группы"];
             }
@@ -614,8 +614,8 @@ namespace Kindergarten {
                 base.Columns.Add(this.columnКод_воспитателя);
                 this.columnФИО = new global::System.Data.DataColumn("ФИО", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnФИО);
-                this.columnАдресс = new global::System.Data.DataColumn("Адресс", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnАдресс);
+                this.columnАдрес = new global::System.Data.DataColumn("Адрес", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnАдрес);
                 this.columnТелефон = new global::System.Data.DataColumn("Телефон", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnТелефон);
                 this.columnКод_группы = new global::System.Data.DataColumn("Код группы", typeof(int), null, global::System.Data.MappingType.Element);
@@ -628,7 +628,7 @@ namespace Kindergarten {
                 this.columnКод_воспитателя.AllowDBNull = false;
                 this.columnКод_воспитателя.Unique = true;
                 this.columnФИО.MaxLength = 255;
-                this.columnАдресс.MaxLength = 255;
+                this.columnАдрес.MaxLength = 255;
                 this.columnТелефон.MaxLength = 255;
             }
             
@@ -1049,7 +1049,7 @@ namespace Kindergarten {
             
             private global::System.Data.DataColumn columnТелефон;
             
-            private global::System.Data.DataColumn columnАдресс;
+            private global::System.Data.DataColumn columnАдрес;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
@@ -1126,9 +1126,9 @@ namespace Kindergarten {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn АдрессColumn {
+            public global::System.Data.DataColumn АдресColumn {
                 get {
-                    return this.columnАдресс;
+                    return this.columnАдрес;
                 }
             }
             
@@ -1169,7 +1169,7 @@ namespace Kindergarten {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public ПерсоналRow AddПерсоналRow(string ФИО, string Должность, int ЗП, string Телефон, string Адресс) {
+            public ПерсоналRow AddПерсоналRow(string ФИО, string Должность, int ЗП, string Телефон, string Адрес) {
                 ПерсоналRow rowПерсоналRow = ((ПерсоналRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1177,7 +1177,7 @@ namespace Kindergarten {
                         Должность,
                         ЗП,
                         Телефон,
-                        Адресс};
+                        Адрес};
                 rowПерсоналRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowПерсоналRow);
                 return rowПерсоналRow;
@@ -1212,7 +1212,7 @@ namespace Kindergarten {
                 this.columnДолжность = base.Columns["Должность"];
                 this.columnЗП = base.Columns["ЗП"];
                 this.columnТелефон = base.Columns["Телефон"];
-                this.columnАдресс = base.Columns["Адресс"];
+                this.columnАдрес = base.Columns["Адрес"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1228,8 +1228,8 @@ namespace Kindergarten {
                 base.Columns.Add(this.columnЗП);
                 this.columnТелефон = new global::System.Data.DataColumn("Телефон", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnТелефон);
-                this.columnАдресс = new global::System.Data.DataColumn("Адресс", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnАдресс);
+                this.columnАдрес = new global::System.Data.DataColumn("Адрес", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnАдрес);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnКод_персонала}, true));
                 this.columnКод_персонала.AutoIncrement = true;
@@ -1240,7 +1240,7 @@ namespace Kindergarten {
                 this.columnФИО.MaxLength = 255;
                 this.columnДолжность.MaxLength = 255;
                 this.columnТелефон.MaxLength = 255;
-                this.columnАдресс.MaxLength = 255;
+                this.columnАдрес.MaxLength = 255;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1734,13 +1734,13 @@ namespace Kindergarten {
             
             private global::System.Data.DataColumn columnМесто_работы_Матери;
             
-            private global::System.Data.DataColumn columnАдресс_Матери;
+            private global::System.Data.DataColumn columnАдрес_Матери;
             
             private global::System.Data.DataColumn columnФИО_Отца;
             
             private global::System.Data.DataColumn columnМесто_работы_Отца;
             
-            private global::System.Data.DataColumn columnАдресс_Отца;
+            private global::System.Data.DataColumn columnАдрес_Отца;
             
             private global::System.Data.DataColumn columnКод_ребёнка;
             
@@ -1807,9 +1807,9 @@ namespace Kindergarten {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn Адресс_МатериColumn {
+            public global::System.Data.DataColumn Адрес_МатериColumn {
                 get {
-                    return this.columnАдресс_Матери;
+                    return this.columnАдрес_Матери;
                 }
             }
             
@@ -1831,9 +1831,9 @@ namespace Kindergarten {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn Адресс_ОтцаColumn {
+            public global::System.Data.DataColumn Адрес_ОтцаColumn {
                 get {
-                    return this.columnАдресс_Отца;
+                    return this.columnАдрес_Отца;
                 }
             }
             
@@ -1898,16 +1898,16 @@ namespace Kindergarten {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public РодителиRow AddРодителиRow(string ФИО_Матери, string Место_работы_Матери, string Адресс_Матери, string ФИО_Отца, string Место_работы_Отца, string Адресс_Отца, int Код_ребёнка, string Номер_телефона_Отца, string Номер_телефона_Матери) {
+            public РодителиRow AddРодителиRow(string ФИО_Матери, string Место_работы_Матери, string Адрес_Матери, string ФИО_Отца, string Место_работы_Отца, string Адрес_Отца, int Код_ребёнка, string Номер_телефона_Отца, string Номер_телефона_Матери) {
                 РодителиRow rowРодителиRow = ((РодителиRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         ФИО_Матери,
                         Место_работы_Матери,
-                        Адресс_Матери,
+                        Адрес_Матери,
                         ФИО_Отца,
                         Место_работы_Отца,
-                        Адресс_Отца,
+                        Адрес_Отца,
                         Код_ребёнка,
                         Номер_телефона_Отца,
                         Номер_телефона_Матери};
@@ -1943,10 +1943,10 @@ namespace Kindergarten {
                 this.columnКод_родителя = base.Columns["Код родителя"];
                 this.columnФИО_Матери = base.Columns["ФИО Матери"];
                 this.columnМесто_работы_Матери = base.Columns["Место работы Матери"];
-                this.columnАдресс_Матери = base.Columns["Адресс Матери"];
+                this.columnАдрес_Матери = base.Columns["Адрес Матери"];
                 this.columnФИО_Отца = base.Columns["ФИО Отца"];
                 this.columnМесто_работы_Отца = base.Columns["Место работы Отца"];
-                this.columnАдресс_Отца = base.Columns["Адресс Отца"];
+                this.columnАдрес_Отца = base.Columns["Адрес Отца"];
                 this.columnКод_ребёнка = base.Columns["Код ребёнка"];
                 this.columnНомер_телефона_Отца = base.Columns["Номер телефона Отца"];
                 this.columnНомер_телефона_Матери = base.Columns["Номер телефона Матери"];
@@ -1961,14 +1961,14 @@ namespace Kindergarten {
                 base.Columns.Add(this.columnФИО_Матери);
                 this.columnМесто_работы_Матери = new global::System.Data.DataColumn("Место работы Матери", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnМесто_работы_Матери);
-                this.columnАдресс_Матери = new global::System.Data.DataColumn("Адресс Матери", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnАдресс_Матери);
+                this.columnАдрес_Матери = new global::System.Data.DataColumn("Адрес Матери", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnАдрес_Матери);
                 this.columnФИО_Отца = new global::System.Data.DataColumn("ФИО Отца", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnФИО_Отца);
                 this.columnМесто_работы_Отца = new global::System.Data.DataColumn("Место работы Отца", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnМесто_работы_Отца);
-                this.columnАдресс_Отца = new global::System.Data.DataColumn("Адресс Отца", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnАдресс_Отца);
+                this.columnАдрес_Отца = new global::System.Data.DataColumn("Адрес Отца", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnАдрес_Отца);
                 this.columnКод_ребёнка = new global::System.Data.DataColumn("Код ребёнка", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnКод_ребёнка);
                 this.columnНомер_телефона_Отца = new global::System.Data.DataColumn("Номер телефона Отца", typeof(string), null, global::System.Data.MappingType.Element);
@@ -1984,10 +1984,10 @@ namespace Kindergarten {
                 this.columnКод_родителя.Unique = true;
                 this.columnФИО_Матери.MaxLength = 255;
                 this.columnМесто_работы_Матери.MaxLength = 255;
-                this.columnАдресс_Матери.MaxLength = 255;
+                this.columnАдрес_Матери.MaxLength = 255;
                 this.columnФИО_Отца.MaxLength = 255;
                 this.columnМесто_работы_Отца.MaxLength = 255;
-                this.columnАдресс_Отца.MaxLength = 255;
+                this.columnАдрес_Отца.MaxLength = 255;
                 this.columnНомер_телефона_Отца.MaxLength = 255;
                 this.columnНомер_телефона_Матери.MaxLength = 255;
             }
@@ -2159,17 +2159,17 @@ namespace Kindergarten {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string Адресс {
+            public string Адрес {
                 get {
                     try {
-                        return ((string)(this[this.tableВоспитатели.АдрессColumn]));
+                        return ((string)(this[this.tableВоспитатели.АдресColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Адресс\' в таблице \'Воспитатели\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Адрес\' в таблице \'Воспитатели\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableВоспитатели.АдрессColumn] = value;
+                    this[this.tableВоспитатели.АдресColumn] = value;
                 }
             }
             
@@ -2230,14 +2230,14 @@ namespace Kindergarten {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsАдрессNull() {
-                return this.IsNull(this.tableВоспитатели.АдрессColumn);
+            public bool IsАдресNull() {
+                return this.IsNull(this.tableВоспитатели.АдресColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetАдрессNull() {
-                this[this.tableВоспитатели.АдрессColumn] = global::System.Convert.DBNull;
+            public void SetАдресNull() {
+                this[this.tableВоспитатели.АдресColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2432,17 +2432,17 @@ namespace Kindergarten {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string Адресс {
+            public string Адрес {
                 get {
                     try {
-                        return ((string)(this[this.tableПерсонал.АдрессColumn]));
+                        return ((string)(this[this.tableПерсонал.АдресColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Адресс\' в таблице \'Персонал\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Адрес\' в таблице \'Персонал\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableПерсонал.АдрессColumn] = value;
+                    this[this.tableПерсонал.АдресColumn] = value;
                 }
             }
             
@@ -2496,14 +2496,14 @@ namespace Kindergarten {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsАдрессNull() {
-                return this.IsNull(this.tableПерсонал.АдрессColumn);
+            public bool IsАдресNull() {
+                return this.IsNull(this.tableПерсонал.АдресColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetАдрессNull() {
-                this[this.tableПерсонал.АдрессColumn] = global::System.Convert.DBNull;
+            public void SetАдресNull() {
+                this[this.tableПерсонал.АдресColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -2782,17 +2782,17 @@ namespace Kindergarten {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string Адресс_Матери {
+            public string Адрес_Матери {
                 get {
                     try {
-                        return ((string)(this[this.tableРодители.Адресс_МатериColumn]));
+                        return ((string)(this[this.tableРодители.Адрес_МатериColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Адресс Матери\' в таблице \'Родители\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Адрес Матери\' в таблице \'Родители\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableРодители.Адресс_МатериColumn] = value;
+                    this[this.tableРодители.Адрес_МатериColumn] = value;
                 }
             }
             
@@ -2830,17 +2830,17 @@ namespace Kindergarten {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string Адресс_Отца {
+            public string Адрес_Отца {
                 get {
                     try {
-                        return ((string)(this[this.tableРодители.Адресс_ОтцаColumn]));
+                        return ((string)(this[this.tableРодители.Адрес_ОтцаColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Адресс Отца\' в таблице \'Родители\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Адрес Отца\' в таблице \'Родители\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableРодители.Адресс_ОтцаColumn] = value;
+                    this[this.tableРодители.Адрес_ОтцаColumn] = value;
                 }
             }
             
@@ -2918,14 +2918,14 @@ namespace Kindergarten {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsАдресс_МатериNull() {
-                return this.IsNull(this.tableРодители.Адресс_МатериColumn);
+            public bool IsАдрес_МатериNull() {
+                return this.IsNull(this.tableРодители.Адрес_МатериColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetАдресс_МатериNull() {
-                this[this.tableРодители.Адресс_МатериColumn] = global::System.Convert.DBNull;
+            public void SetАдрес_МатериNull() {
+                this[this.tableРодители.Адрес_МатериColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2954,14 +2954,14 @@ namespace Kindergarten {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsАдресс_ОтцаNull() {
-                return this.IsNull(this.tableРодители.Адресс_ОтцаColumn);
+            public bool IsАдрес_ОтцаNull() {
+                return this.IsNull(this.tableРодители.Адрес_ОтцаColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetАдресс_ОтцаNull() {
-                this[this.tableРодители.Адресс_ОтцаColumn] = global::System.Convert.DBNull;
+            public void SetАдрес_ОтцаNull() {
+                this[this.tableРодители.Адрес_ОтцаColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3309,45 +3309,45 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
             tableMapping.DataSetTable = "Воспитатели";
             tableMapping.ColumnMappings.Add("Код воспитателя", "Код воспитателя");
             tableMapping.ColumnMappings.Add("ФИО", "ФИО");
-            tableMapping.ColumnMappings.Add("Адресс", "Адресс");
+            tableMapping.ColumnMappings.Add("Адрес", "Адрес");
             tableMapping.ColumnMappings.Add("Телефон", "Телефон");
             tableMapping.ColumnMappings.Add("Код группы", "Код группы");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Воспитатели` WHERE ((`Код воспитателя` = ?) AND ((? = 1 AND `ФИО` IS NULL) OR (`ФИО` = ?)) AND ((? = 1 AND `Адресс` IS NULL) OR (`Адресс` = ?)) AND ((? = 1 AND `Телефон` IS NULL) OR (`Телефон` = ?)) AND ((? = 1 AND `Код группы` IS NULL) OR (`Код группы` = ?)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Воспитатели` WHERE ((`Код воспитателя` = ?) AND ((? = 1 AND `ФИО` IS NULL) OR (`ФИО` = ?)) AND ((? = 1 AND `Адрес` IS NULL) OR (`Адрес` = ?)) AND ((? = 1 AND `Телефон` IS NULL) OR (`Телефон` = ?)) AND ((? = 1 AND `Код группы` IS NULL) OR (`Код группы` = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Код_воспитателя", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Код воспитателя", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_ФИО", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ФИО", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Адресс", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Адресс", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Адрес", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Адрес", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Телефон", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Телефон", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Телефон", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Телефон", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Код_группы", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Код группы", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Код_группы", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Код группы", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `Воспитатели` (`ФИО`, `Адресс`, `Телефон`, `Код группы`) VALUES (?, ?" +
-                ", ?, ?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO `Воспитатели` (`ФИО`, `Адрес`, `Телефон`, `Код группы`) VALUES (?, ?," +
+                " ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ФИО", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Адресс", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Адрес", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Телефон", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Телефон", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Код_группы", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Код группы", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE `Воспитатели` SET `ФИО` = ?, `Адресс` = ?, `Телефон` = ?, `Код группы` = ? WHERE ((`Код воспитателя` = ?) AND ((? = 1 AND `ФИО` IS NULL) OR (`ФИО` = ?)) AND ((? = 1 AND `Адресс` IS NULL) OR (`Адресс` = ?)) AND ((? = 1 AND `Телефон` IS NULL) OR (`Телефон` = ?)) AND ((? = 1 AND `Код группы` IS NULL) OR (`Код группы` = ?)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE `Воспитатели` SET `ФИО` = ?, `Адрес` = ?, `Телефон` = ?, `Код группы` = ? WHERE ((`Код воспитателя` = ?) AND ((? = 1 AND `ФИО` IS NULL) OR (`ФИО` = ?)) AND ((? = 1 AND `Адрес` IS NULL) OR (`Адрес` = ?)) AND ((? = 1 AND `Телефон` IS NULL) OR (`Телефон` = ?)) AND ((? = 1 AND `Код группы` IS NULL) OR (`Код группы` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ФИО", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Адресс", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Адрес", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Телефон", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Телефон", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Код_группы", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Код группы", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Код_воспитателя", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Код воспитателя", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_ФИО", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ФИО", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Адресс", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Адресс", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Адрес", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Адрес", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Телефон", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Телефон", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Телефон", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Телефон", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Код_группы", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Код группы", global::System.Data.DataRowVersion.Original, true, null));
@@ -3367,7 +3367,7 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT [Код воспитателя], ФИО, Адресс, Телефон, [Код группы] FROM Воспитатели";
+            this._commandCollection[0].CommandText = "SELECT [Код воспитателя], ФИО, Адрес, Телефон, [Код группы] FROM Воспитатели";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -3428,7 +3428,7 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Код_воспитателя, string Original_ФИО, string Original_Адресс, string Original_Телефон, global::System.Nullable<int> Original_Код_группы) {
+        public virtual int Delete(int Original_Код_воспитателя, string Original_ФИО, string Original_Адрес, string Original_Телефон, global::System.Nullable<int> Original_Код_группы) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Код_воспитателя));
             if ((Original_ФИО == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -3438,13 +3438,13 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_ФИО));
             }
-            if ((Original_Адресс == null)) {
+            if ((Original_Адрес == null)) {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_Адресс));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_Адрес));
             }
             if ((Original_Телефон == null)) {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
@@ -3482,18 +3482,18 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string ФИО, string Адресс, string Телефон, global::System.Nullable<int> Код_группы) {
+        public virtual int Insert(string ФИО, string Адрес, string Телефон, global::System.Nullable<int> Код_группы) {
             if ((ФИО == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(ФИО));
             }
-            if ((Адресс == null)) {
+            if ((Адрес == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Адресс));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Адрес));
             }
             if ((Телефон == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
@@ -3527,18 +3527,18 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string ФИО, string Адресс, string Телефон, global::System.Nullable<int> Код_группы, int Original_Код_воспитателя, string Original_ФИО, string Original_Адресс, string Original_Телефон, global::System.Nullable<int> Original_Код_группы) {
+        public virtual int Update(string ФИО, string Адрес, string Телефон, global::System.Nullable<int> Код_группы, int Original_Код_воспитателя, string Original_ФИО, string Original_Адрес, string Original_Телефон, global::System.Nullable<int> Original_Код_группы) {
             if ((ФИО == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(ФИО));
             }
-            if ((Адресс == null)) {
+            if ((Адрес == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Адресс));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Адрес));
             }
             if ((Телефон == null)) {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
@@ -3561,13 +3561,13 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_ФИО));
             }
-            if ((Original_Адресс == null)) {
+            if ((Original_Адрес == null)) {
                 this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_Адресс));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_Адрес));
             }
             if ((Original_Телефон == null)) {
                 this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
@@ -4040,11 +4040,11 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("Должность", "Должность");
             tableMapping.ColumnMappings.Add("ЗП", "ЗП");
             tableMapping.ColumnMappings.Add("Телефон", "Телефон");
-            tableMapping.ColumnMappings.Add("Адресс", "Адресс");
+            tableMapping.ColumnMappings.Add("Адрес", "Адрес");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Персонал` WHERE ((`Код персонала` = ?) AND ((? = 1 AND `ФИО` IS NULL) OR (`ФИО` = ?)) AND ((? = 1 AND `Должность` IS NULL) OR (`Должность` = ?)) AND ((? = 1 AND `ЗП` IS NULL) OR (`ЗП` = ?)) AND ((? = 1 AND `Телефон` IS NULL) OR (`Телефон` = ?)) AND ((? = 1 AND `Адресс` IS NULL) OR (`Адресс` = ?)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Персонал` WHERE ((`Код персонала` = ?) AND ((? = 1 AND `ФИО` IS NULL) OR (`ФИО` = ?)) AND ((? = 1 AND `Должность` IS NULL) OR (`Должность` = ?)) AND ((? = 1 AND `ЗП` IS NULL) OR (`ЗП` = ?)) AND ((? = 1 AND `Телефон` IS NULL) OR (`Телефон` = ?)) AND ((? = 1 AND `Адрес` IS NULL) OR (`Адрес` = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Код_персонала", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Код персонала", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_ФИО", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО", global::System.Data.DataRowVersion.Original, true, null));
@@ -4055,27 +4055,27 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ЗП", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ЗП", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Телефон", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Телефон", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Телефон", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Телефон", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Адресс", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Адресс", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Адрес", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Адрес", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `Персонал` (`ФИО`, `Должность`, `ЗП`, `Телефон`, `Адресс`) VALUES (?," +
-                " ?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO `Персонал` (`ФИО`, `Должность`, `ЗП`, `Телефон`, `Адрес`) VALUES (?, " +
+                "?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ФИО", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Должность", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Должность", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ЗП", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ЗП", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Телефон", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Телефон", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Адресс", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Адрес", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE `Персонал` SET `ФИО` = ?, `Должность` = ?, `ЗП` = ?, `Телефон` = ?, `Адресс` = ? WHERE ((`Код персонала` = ?) AND ((? = 1 AND `ФИО` IS NULL) OR (`ФИО` = ?)) AND ((? = 1 AND `Должность` IS NULL) OR (`Должность` = ?)) AND ((? = 1 AND `ЗП` IS NULL) OR (`ЗП` = ?)) AND ((? = 1 AND `Телефон` IS NULL) OR (`Телефон` = ?)) AND ((? = 1 AND `Адресс` IS NULL) OR (`Адресс` = ?)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE `Персонал` SET `ФИО` = ?, `Должность` = ?, `ЗП` = ?, `Телефон` = ?, `Адрес` = ? WHERE ((`Код персонала` = ?) AND ((? = 1 AND `ФИО` IS NULL) OR (`ФИО` = ?)) AND ((? = 1 AND `Должность` IS NULL) OR (`Должность` = ?)) AND ((? = 1 AND `ЗП` IS NULL) OR (`ЗП` = ?)) AND ((? = 1 AND `Телефон` IS NULL) OR (`Телефон` = ?)) AND ((? = 1 AND `Адрес` IS NULL) OR (`Адрес` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ФИО", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Должность", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Должность", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ЗП", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ЗП", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Телефон", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Телефон", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Адресс", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Адрес", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Код_персонала", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Код персонала", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_ФИО", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ФИО", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО", global::System.Data.DataRowVersion.Original, false, null));
@@ -4085,8 +4085,8 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ЗП", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ЗП", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Телефон", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Телефон", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Телефон", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Телефон", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Адресс", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Адресс", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Адрес", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Адрес", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4102,7 +4102,7 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT [Код персонала], ФИО, Должность, ЗП, Телефон, Адресс FROM Персонал";
+            this._commandCollection[0].CommandText = "SELECT [Код персонала], ФИО, Должность, ЗП, Телефон, Адрес FROM Персонал";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -4163,7 +4163,7 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Код_персонала, string Original_ФИО, string Original_Должность, global::System.Nullable<int> Original_ЗП, string Original_Телефон, string Original_Адресс) {
+        public virtual int Delete(int Original_Код_персонала, string Original_ФИО, string Original_Должность, global::System.Nullable<int> Original_ЗП, string Original_Телефон, string Original_Адрес) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Код_персонала));
             if ((Original_ФИО == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -4197,13 +4197,13 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_Телефон));
             }
-            if ((Original_Адресс == null)) {
+            if ((Original_Адрес == null)) {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_Адресс));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_Адрес));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -4225,7 +4225,7 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string ФИО, string Должность, global::System.Nullable<int> ЗП, string Телефон, string Адресс) {
+        public virtual int Insert(string ФИО, string Должность, global::System.Nullable<int> ЗП, string Телефон, string Адрес) {
             if ((ФИО == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -4250,11 +4250,11 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Телефон));
             }
-            if ((Адресс == null)) {
+            if ((Адрес == null)) {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Адресс));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Адрес));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -4276,7 +4276,7 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string ФИО, string Должность, global::System.Nullable<int> ЗП, string Телефон, string Адресс, int Original_Код_персонала, string Original_ФИО, string Original_Должность, global::System.Nullable<int> Original_ЗП, string Original_Телефон, string Original_Адресс) {
+        public virtual int Update(string ФИО, string Должность, global::System.Nullable<int> ЗП, string Телефон, string Адрес, int Original_Код_персонала, string Original_ФИО, string Original_Должность, global::System.Nullable<int> Original_ЗП, string Original_Телефон, string Original_Адрес) {
             if ((ФИО == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -4301,11 +4301,11 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Телефон));
             }
-            if ((Адресс == null)) {
+            if ((Адрес == null)) {
                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Адресс));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Адрес));
             }
             this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_Код_персонала));
             if ((Original_ФИО == null)) {
@@ -4340,13 +4340,13 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_Телефон));
             }
-            if ((Original_Адресс == null)) {
+            if ((Original_Адрес == null)) {
                 this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_Адресс));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_Адрес));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -4976,31 +4976,31 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("Код родителя", "Код родителя");
             tableMapping.ColumnMappings.Add("ФИО Матери", "ФИО Матери");
             tableMapping.ColumnMappings.Add("Место работы Матери", "Место работы Матери");
-            tableMapping.ColumnMappings.Add("Адресс Матери", "Адресс Матери");
+            tableMapping.ColumnMappings.Add("Адрес Матери", "Адрес Матери");
             tableMapping.ColumnMappings.Add("ФИО Отца", "ФИО Отца");
             tableMapping.ColumnMappings.Add("Место работы Отца", "Место работы Отца");
-            tableMapping.ColumnMappings.Add("Адресс Отца", "Адресс Отца");
+            tableMapping.ColumnMappings.Add("Адрес Отца", "Адрес Отца");
             tableMapping.ColumnMappings.Add("Код ребёнка", "Код ребёнка");
             tableMapping.ColumnMappings.Add("Номер телефона Отца", "Номер телефона Отца");
             tableMapping.ColumnMappings.Add("Номер телефона Матери", "Номер телефона Матери");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Родители` WHERE ((`Код родителя` = ?) AND ((? = 1 AND `ФИО Матери` IS NULL) OR (`ФИО Матери` = ?)) AND ((? = 1 AND `Место работы Матери` IS NULL) OR (`Место работы Матери` = ?)) AND ((? = 1 AND `Адресс Матери` IS NULL) OR (`Адресс Матери` = ?)) AND ((? = 1 AND `ФИО Отца` IS NULL) OR (`ФИО Отца` = ?)) AND ((? = 1 AND `Место работы Отца` IS NULL) OR (`Место работы Отца` = ?)) AND ((? = 1 AND `Адресс Отца` IS NULL) OR (`Адресс Отца` = ?)) AND ((? = 1 AND `Код ребёнка` IS NULL) OR (`Код ребёнка` = ?)) AND ((? = 1 AND `Номер телефона Отца` IS NULL) OR (`Номер телефона Отца` = ?)) AND ((? = 1 AND `Номер телефона Матери` IS NULL) OR (`Номер телефона Матери` = ?)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Родители` WHERE ((`Код родителя` = ?) AND ((? = 1 AND `ФИО Матери` IS NULL) OR (`ФИО Матери` = ?)) AND ((? = 1 AND `Место работы Матери` IS NULL) OR (`Место работы Матери` = ?)) AND ((? = 1 AND `Адрес Матери` IS NULL) OR (`Адрес Матери` = ?)) AND ((? = 1 AND `ФИО Отца` IS NULL) OR (`ФИО Отца` = ?)) AND ((? = 1 AND `Место работы Отца` IS NULL) OR (`Место работы Отца` = ?)) AND ((? = 1 AND `Адрес Отца` IS NULL) OR (`Адрес Отца` = ?)) AND ((? = 1 AND `Код ребёнка` IS NULL) OR (`Код ребёнка` = ?)) AND ((? = 1 AND `Номер телефона Отца` IS NULL) OR (`Номер телефона Отца` = ?)) AND ((? = 1 AND `Номер телефона Матери` IS NULL) OR (`Номер телефона Матери` = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Код_родителя", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Код родителя", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_ФИО_Матери", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО Матери", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ФИО_Матери", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО Матери", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Место_работы_Матери", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Место работы Матери", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Место_работы_Матери", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Место работы Матери", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Адресс_Матери", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс Матери", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Адресс_Матери", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс Матери", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Адрес_Матери", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес Матери", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Адрес_Матери", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес Матери", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_ФИО_Отца", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО Отца", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ФИО_Отца", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО Отца", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Место_работы_Отца", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Место работы Отца", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Место_работы_Отца", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Место работы Отца", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Адресс_Отца", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс Отца", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Адресс_Отца", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс Отца", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Адрес_Отца", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес Отца", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Адрес_Отца", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес Отца", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Код_ребёнка", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Код ребёнка", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Код_ребёнка", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Код ребёнка", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Номер_телефона_Отца", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Номер телефона Отца", global::System.Data.DataRowVersion.Original, true, null));
@@ -5009,29 +5009,29 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Номер_телефона_Матери", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Номер телефона Матери", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `Родители` (`ФИО Матери`, `Место работы Матери`, `Адресс Матери`, `ФИ" +
-                "О Отца`, `Место работы Отца`, `Адресс Отца`, `Код ребёнка`, `Номер телефона Отца" +
-                "`, `Номер телефона Матери`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO `Родители` (`ФИО Матери`, `Место работы Матери`, `Адрес Матери`, `ФИО" +
+                " Отца`, `Место работы Отца`, `Адрес Отца`, `Код ребёнка`, `Номер телефона Отца`," +
+                " `Номер телефона Матери`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ФИО_Матери", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО Матери", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Место_работы_Матери", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Место работы Матери", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Адресс_Матери", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс Матери", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Адрес_Матери", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес Матери", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ФИО_Отца", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО Отца", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Место_работы_Отца", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Место работы Отца", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Адресс_Отца", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс Отца", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Адрес_Отца", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес Отца", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Код_ребёнка", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Код ребёнка", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Номер_телефона_Отца", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Номер телефона Отца", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Номер_телефона_Матери", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Номер телефона Матери", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE `Родители` SET `ФИО Матери` = ?, `Место работы Матери` = ?, `Адресс Матери` = ?, `ФИО Отца` = ?, `Место работы Отца` = ?, `Адресс Отца` = ?, `Код ребёнка` = ?, `Номер телефона Отца` = ?, `Номер телефона Матери` = ? WHERE ((`Код родителя` = ?) AND ((? = 1 AND `ФИО Матери` IS NULL) OR (`ФИО Матери` = ?)) AND ((? = 1 AND `Место работы Матери` IS NULL) OR (`Место работы Матери` = ?)) AND ((? = 1 AND `Адресс Матери` IS NULL) OR (`Адресс Матери` = ?)) AND ((? = 1 AND `ФИО Отца` IS NULL) OR (`ФИО Отца` = ?)) AND ((? = 1 AND `Место работы Отца` IS NULL) OR (`Место работы Отца` = ?)) AND ((? = 1 AND `Адресс Отца` IS NULL) OR (`Адресс Отца` = ?)) AND ((? = 1 AND `Код ребёнка` IS NULL) OR (`Код ребёнка` = ?)) AND ((? = 1 AND `Номер телефона Отца` IS NULL) OR (`Номер телефона Отца` = ?)) AND ((? = 1 AND `Номер телефона Матери` IS NULL) OR (`Номер телефона Матери` = ?)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE `Родители` SET `ФИО Матери` = ?, `Место работы Матери` = ?, `Адрес Матери` = ?, `ФИО Отца` = ?, `Место работы Отца` = ?, `Адрес Отца` = ?, `Код ребёнка` = ?, `Номер телефона Отца` = ?, `Номер телефона Матери` = ? WHERE ((`Код родителя` = ?) AND ((? = 1 AND `ФИО Матери` IS NULL) OR (`ФИО Матери` = ?)) AND ((? = 1 AND `Место работы Матери` IS NULL) OR (`Место работы Матери` = ?)) AND ((? = 1 AND `Адрес Матери` IS NULL) OR (`Адрес Матери` = ?)) AND ((? = 1 AND `ФИО Отца` IS NULL) OR (`ФИО Отца` = ?)) AND ((? = 1 AND `Место работы Отца` IS NULL) OR (`Место работы Отца` = ?)) AND ((? = 1 AND `Адрес Отца` IS NULL) OR (`Адрес Отца` = ?)) AND ((? = 1 AND `Код ребёнка` IS NULL) OR (`Код ребёнка` = ?)) AND ((? = 1 AND `Номер телефона Отца` IS NULL) OR (`Номер телефона Отца` = ?)) AND ((? = 1 AND `Номер телефона Матери` IS NULL) OR (`Номер телефона Матери` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ФИО_Матери", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО Матери", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Место_работы_Матери", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Место работы Матери", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Адресс_Матери", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс Матери", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Адрес_Матери", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес Матери", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ФИО_Отца", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО Отца", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Место_работы_Отца", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Место работы Отца", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Адресс_Отца", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс Отца", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Адрес_Отца", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес Отца", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Код_ребёнка", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Код ребёнка", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Номер_телефона_Отца", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Номер телефона Отца", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Номер_телефона_Матери", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Номер телефона Матери", global::System.Data.DataRowVersion.Current, false, null));
@@ -5040,14 +5040,14 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ФИО_Матери", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО Матери", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Место_работы_Матери", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Место работы Матери", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Место_работы_Матери", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Место работы Матери", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Адресс_Матери", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс Матери", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Адресс_Матери", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс Матери", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Адрес_Матери", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес Матери", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Адрес_Матери", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес Матери", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_ФИО_Отца", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО Отца", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ФИО_Отца", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ФИО Отца", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Место_работы_Отца", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Место работы Отца", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Место_работы_Отца", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Место работы Отца", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Адресс_Отца", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс Отца", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Адресс_Отца", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адресс Отца", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Адрес_Отца", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес Отца", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Адрес_Отца", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Адрес Отца", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Код_ребёнка", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Код ребёнка", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Код_ребёнка", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Код ребёнка", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Номер_телефона_Отца", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Номер телефона Отца", global::System.Data.DataRowVersion.Original, true, null));
@@ -5069,9 +5069,9 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT [Код родителя], [ФИО Матери], [Место работы Матери], [Адресс Матери], [ФИО" +
-                " Отца], [Место работы Отца], [Адресс Отца], [Код ребёнка], [Номер телефона Отца]" +
-                ", [Номер телефона Матери] FROM Родители";
+            this._commandCollection[0].CommandText = "SELECT [Код родителя], [ФИО Матери], [Место работы Матери], [Адрес Матери], [ФИО " +
+                "Отца], [Место работы Отца], [Адрес Отца], [Код ребёнка], [Номер телефона Отца], " +
+                "[Номер телефона Матери] FROM Родители";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -5132,7 +5132,7 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Код_родителя, string Original_ФИО_Матери, string Original_Место_работы_Матери, string Original_Адресс_Матери, string Original_ФИО_Отца, string Original_Место_работы_Отца, string Original_Адресс_Отца, global::System.Nullable<int> Original_Код_ребёнка, string Original_Номер_телефона_Отца, string Original_Номер_телефона_Матери) {
+        public virtual int Delete(int Original_Код_родителя, string Original_ФИО_Матери, string Original_Место_работы_Матери, string Original_Адрес_Матери, string Original_ФИО_Отца, string Original_Место_работы_Отца, string Original_Адрес_Отца, global::System.Nullable<int> Original_Код_ребёнка, string Original_Номер_телефона_Отца, string Original_Номер_телефона_Матери) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Код_родителя));
             if ((Original_ФИО_Матери == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -5150,13 +5150,13 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_Место_работы_Матери));
             }
-            if ((Original_Адресс_Матери == null)) {
+            if ((Original_Адрес_Матери == null)) {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_Адресс_Матери));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_Адрес_Матери));
             }
             if ((Original_ФИО_Отца == null)) {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
@@ -5174,13 +5174,13 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_Место_работы_Отца));
             }
-            if ((Original_Адресс_Отца == null)) {
+            if ((Original_Адрес_Отца == null)) {
                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_Адресс_Отца));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_Адрес_Отца));
             }
             if ((Original_Код_ребёнка.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
@@ -5226,7 +5226,7 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string ФИО_Матери, string Место_работы_Матери, string Адресс_Матери, string ФИО_Отца, string Место_работы_Отца, string Адресс_Отца, global::System.Nullable<int> Код_ребёнка, string Номер_телефона_Отца, string Номер_телефона_Матери) {
+        public virtual int Insert(string ФИО_Матери, string Место_работы_Матери, string Адрес_Матери, string ФИО_Отца, string Место_работы_Отца, string Адрес_Отца, global::System.Nullable<int> Код_ребёнка, string Номер_телефона_Отца, string Номер_телефона_Матери) {
             if ((ФИО_Матери == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -5239,11 +5239,11 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Место_работы_Матери));
             }
-            if ((Адресс_Матери == null)) {
+            if ((Адрес_Матери == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Адресс_Матери));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Адрес_Матери));
             }
             if ((ФИО_Отца == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
@@ -5257,11 +5257,11 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Место_работы_Отца));
             }
-            if ((Адресс_Отца == null)) {
+            if ((Адрес_Отца == null)) {
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Адресс_Отца));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Адрес_Отца));
             }
             if ((Код_ребёнка.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[6].Value = ((int)(Код_ребёнка.Value));
@@ -5304,20 +5304,20 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
         public virtual int Update(
                     string ФИО_Матери, 
                     string Место_работы_Матери, 
-                    string Адресс_Матери, 
+                    string Адрес_Матери, 
                     string ФИО_Отца, 
                     string Место_работы_Отца, 
-                    string Адресс_Отца, 
+                    string Адрес_Отца, 
                     global::System.Nullable<int> Код_ребёнка, 
                     string Номер_телефона_Отца, 
                     string Номер_телефона_Матери, 
                     int Original_Код_родителя, 
                     string Original_ФИО_Матери, 
                     string Original_Место_работы_Матери, 
-                    string Original_Адресс_Матери, 
+                    string Original_Адрес_Матери, 
                     string Original_ФИО_Отца, 
                     string Original_Место_работы_Отца, 
-                    string Original_Адресс_Отца, 
+                    string Original_Адрес_Отца, 
                     global::System.Nullable<int> Original_Код_ребёнка, 
                     string Original_Номер_телефона_Отца, 
                     string Original_Номер_телефона_Матери) {
@@ -5333,11 +5333,11 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Место_работы_Матери));
             }
-            if ((Адресс_Матери == null)) {
+            if ((Адрес_Матери == null)) {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Адресс_Матери));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Адрес_Матери));
             }
             if ((ФИО_Отца == null)) {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
@@ -5351,11 +5351,11 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Место_работы_Отца));
             }
-            if ((Адресс_Отца == null)) {
+            if ((Адрес_Отца == null)) {
                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Адресс_Отца));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Адрес_Отца));
             }
             if ((Код_ребёнка.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Код_ребёнка.Value));
@@ -5392,13 +5392,13 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_Место_работы_Матери));
             }
-            if ((Original_Адресс_Матери == null)) {
+            if ((Original_Адрес_Матери == null)) {
                 this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_Адресс_Матери));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_Адрес_Матери));
             }
             if ((Original_ФИО_Отца == null)) {
                 this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
@@ -5416,13 +5416,13 @@ namespace Kindergarten.KindergartenDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_Место_работы_Отца));
             }
-            if ((Original_Адресс_Отца == null)) {
+            if ((Original_Адрес_Отца == null)) {
                 this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_Адресс_Отца));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_Адрес_Отца));
             }
             if ((Original_Код_ребёнка.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));

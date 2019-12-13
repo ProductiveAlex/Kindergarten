@@ -43,33 +43,33 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.родителиBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kindergartenDataSet = new Kindergarten.KindergartenDataSet();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.ребёнокBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ребёнокTableAdapter = new Kindergarten.KindergartenDataSetTableAdapters.РебёнокTableAdapter();
+            this.kindergartenDataSet = new Kindergarten.KindergartenDataSet();
             this.воспитателиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.воспитателиTableAdapter = new Kindergarten.KindergartenDataSetTableAdapters.ВоспитателиTableAdapter();
-            this.персоналBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.персоналTableAdapter = new Kindergarten.KindergartenDataSetTableAdapters.ПерсоналTableAdapter();
             this.группаBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.группаTableAdapter = new Kindergarten.KindergartenDataSetTableAdapters.ГруппаTableAdapter();
+            this.персоналBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.персоналTableAdapter = new Kindergarten.KindergartenDataSetTableAdapters.ПерсоналTableAdapter();
+            this.ребёнокBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ребёнокTableAdapter = new Kindergarten.KindergartenDataSetTableAdapters.РебёнокTableAdapter();
+            this.родителиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.родителиTableAdapter = new Kindergarten.KindergartenDataSetTableAdapters.РодителиTableAdapter();
             this.toolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.родителиBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kindergartenDataSet)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ребёнокBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kindergartenDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.воспитателиBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.персоналBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.группаBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.персоналBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ребёнокBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.родителиBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -158,7 +158,7 @@
             // toolStripTextBox2
             // 
             this.toolStripTextBox2.Name = "toolStripTextBox2";
-            this.toolStripTextBox2.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox2.Size = new System.Drawing.Size(100, 39);
             this.toolStripTextBox2.Text = "Сор. данных";
             // 
             // menuStrip1
@@ -186,16 +186,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(944, 303);
             this.dataGridView1.TabIndex = 2;
-            // 
-            // родителиBindingSource
-            // 
-            this.родителиBindingSource.DataMember = "Родители";
-            this.родителиBindingSource.DataSource = this.kindergartenDataSet;
-            // 
-            // kindergartenDataSet
-            // 
-            this.kindergartenDataSet.DataSetName = "KindergartenDataSet";
-            this.kindergartenDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupBox1
             // 
@@ -271,14 +261,10 @@
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.RadioButton1_CheckedChanged);
             // 
-            // ребёнокBindingSource
+            // kindergartenDataSet
             // 
-            this.ребёнокBindingSource.DataMember = "Ребёнок";
-            this.ребёнокBindingSource.DataSource = this.kindergartenDataSet;
-            // 
-            // ребёнокTableAdapter
-            // 
-            this.ребёнокTableAdapter.ClearBeforeFill = true;
+            this.kindergartenDataSet.DataSetName = "KindergartenDataSet";
+            this.kindergartenDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // воспитателиBindingSource
             // 
@@ -289,6 +275,15 @@
             // 
             this.воспитателиTableAdapter.ClearBeforeFill = true;
             // 
+            // группаBindingSource
+            // 
+            this.группаBindingSource.DataMember = "Группа";
+            this.группаBindingSource.DataSource = this.kindergartenDataSet;
+            // 
+            // группаTableAdapter
+            // 
+            this.группаTableAdapter.ClearBeforeFill = true;
+            // 
             // персоналBindingSource
             // 
             this.персоналBindingSource.DataMember = "Персонал";
@@ -298,14 +293,19 @@
             // 
             this.персоналTableAdapter.ClearBeforeFill = true;
             // 
-            // группаBindingSource
+            // ребёнокBindingSource
             // 
-            this.группаBindingSource.DataMember = "Группа";
-            this.группаBindingSource.DataSource = this.kindergartenDataSet;
+            this.ребёнокBindingSource.DataMember = "Ребёнок";
+            this.ребёнокBindingSource.DataSource = this.kindergartenDataSet;
             // 
-            // группаTableAdapter
+            // ребёнокTableAdapter
             // 
-            this.группаTableAdapter.ClearBeforeFill = true;
+            this.ребёнокTableAdapter.ClearBeforeFill = true;
+            // 
+            // родителиBindingSource
+            // 
+            this.родителиBindingSource.DataMember = "Родители";
+            this.родителиBindingSource.DataSource = this.kindergartenDataSet;
             // 
             // родителиTableAdapter
             // 
@@ -330,14 +330,14 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.родителиBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kindergartenDataSet)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ребёнокBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kindergartenDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.воспитателиBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.персоналBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.группаBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.персоналBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ребёнокBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.родителиBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -365,14 +365,14 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private KindergartenDataSet kindergartenDataSet;
-        private System.Windows.Forms.BindingSource ребёнокBindingSource;
-        private KindergartenDataSetTableAdapters.РебёнокTableAdapter ребёнокTableAdapter;
         private System.Windows.Forms.BindingSource воспитателиBindingSource;
         private KindergartenDataSetTableAdapters.ВоспитателиTableAdapter воспитателиTableAdapter;
-        private System.Windows.Forms.BindingSource персоналBindingSource;
-        private KindergartenDataSetTableAdapters.ПерсоналTableAdapter персоналTableAdapter;
         private System.Windows.Forms.BindingSource группаBindingSource;
         private KindergartenDataSetTableAdapters.ГруппаTableAdapter группаTableAdapter;
+        private System.Windows.Forms.BindingSource персоналBindingSource;
+        private KindergartenDataSetTableAdapters.ПерсоналTableAdapter персоналTableAdapter;
+        private System.Windows.Forms.BindingSource ребёнокBindingSource;
+        private KindergartenDataSetTableAdapters.РебёнокTableAdapter ребёнокTableAdapter;
         private System.Windows.Forms.BindingSource родителиBindingSource;
         private KindergartenDataSetTableAdapters.РодителиTableAdapter родителиTableAdapter;
     }
