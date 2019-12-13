@@ -119,6 +119,7 @@
             this.button2.TabIndex = 21;
             this.button2.Text = "Назад";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click_1);
             // 
             // button1
             // 
