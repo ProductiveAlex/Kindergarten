@@ -76,7 +76,7 @@ namespace Kindergarten
         {
             Zaprosi zaprosi = new Zaprosi();
             zaprosi.Show();
-
+            //AAAA
         }
     }
 }
