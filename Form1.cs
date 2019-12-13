@@ -31,5 +31,45 @@ namespace Kindergarten
             this.ребёнокTableAdapter.Fill(this.kindergartenDataSet.Ребёнок);
 
         }
+
+        private void RadioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Enabled == true)
+            {
+                dataGridView1.DataSource = родителиBindingSource;
+            }
+        }
+
+        private void RadioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton2.Enabled == true)
+            {
+                dataGridView1.DataSource = ребёнокBindingSource;
+            }
+        }
+
+        private void RadioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton3.Enabled == true)
+            {
+                dataGridView1.DataSource = воспитателиBindingSource;
+            }
+        }
+
+        private void RadioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton4.Enabled == true)
+            {
+                dataGridView1.DataSource = персоналBindingSource;
+            }
+        }
+
+        private void RadioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton5.Enabled == true)
+            {
+                dataGridView1.DataSource = группаBindingSource;
+            }
+        }
     }
 }
