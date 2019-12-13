@@ -145,6 +145,11 @@ namespace Kindergarten
 
         private void ToolStripButton1_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void ToolStripButton1_Click_1(object sender, EventArgs e)
+        {
             this.Hide();
             Dobvlenie D = new Dobvlenie();
             D.Show();

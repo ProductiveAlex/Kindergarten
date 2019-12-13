@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
@@ -75,6 +76,7 @@
             // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
             this.toolStripButton2,
             this.toolStripButton3,
             this.toolStripButton4,
@@ -88,6 +90,15 @@
             this.toolStrip1.Size = new System.Drawing.Size(972, 39);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(110, 36);
+            this.toolStripButton1.Text = "Добавление";
+            this.toolStripButton1.Click += new System.EventHandler(this.ToolStripButton1_Click_1);
             // 
             // toolStripButton2
             // 
@@ -150,7 +161,7 @@
             // 
             this.toolStripTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox2.Name = "toolStripTextBox2";
-            this.toolStripTextBox2.Size = new System.Drawing.Size(100, 39);
+            this.toolStripTextBox2.Size = new System.Drawing.Size(100, 23);
             this.toolStripTextBox2.Text = "Сор. данных";
             // 
             // menuStrip1
@@ -366,6 +377,7 @@
         private KindergartenDataSetTableAdapters.РебёнокTableAdapter ребёнокTableAdapter;
         private System.Windows.Forms.BindingSource родителиBindingSource;
         private KindergartenDataSetTableAdapters.РодителиTableAdapter родителиTableAdapter;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }
 
