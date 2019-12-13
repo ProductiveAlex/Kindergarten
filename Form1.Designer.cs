@@ -43,23 +43,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.kindergartenDataSet = new Kindergarten.KindergartenDataSet();
-            this.ребёнокBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ребёнокTableAdapter = new Kindergarten.KindergartenDataSetTableAdapters.РебёнокTableAdapter();
-            this.воспитателиBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.воспитателиTableAdapter = new Kindergarten.KindergartenDataSetTableAdapters.ВоспитателиTableAdapter();
-            this.персоналBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.персоналTableAdapter = new Kindergarten.KindergartenDataSetTableAdapters.ПерсоналTableAdapter();
-            this.группаBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.группаTableAdapter = new Kindergarten.KindergartenDataSetTableAdapters.ГруппаTableAdapter();
-            this.родителиBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.родителиTableAdapter = new Kindergarten.KindergartenDataSetTableAdapters.РодителиTableAdapter();
             this.кодРодителяDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.фИОМатериDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.местоРаботыМатериDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,16 +53,34 @@
             this.кодРебёнкаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.номерТелефонаОтцаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.номерТелефонаМатериDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.родителиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kindergartenDataSet = new Kindergarten.KindergartenDataSet();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.ребёнокBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ребёнокTableAdapter = new Kindergarten.KindergartenDataSetTableAdapters.РебёнокTableAdapter();
+            this.воспитателиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.воспитателиTableAdapter = new Kindergarten.KindergartenDataSetTableAdapters.ВоспитателиTableAdapter();
+            this.персоналBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.персоналTableAdapter = new Kindergarten.KindergartenDataSetTableAdapters.ПерсоналTableAdapter();
+            this.группаBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.группаTableAdapter = new Kindergarten.KindergartenDataSetTableAdapters.ГруппаTableAdapter();
+            this.родителиTableAdapter = new Kindergarten.KindergartenDataSetTableAdapters.РодителиTableAdapter();
+            this.label1 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.родителиBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kindergartenDataSet)).BeginInit();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ребёнокBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.воспитателиBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.персоналBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.группаBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.родителиBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -138,11 +139,12 @@
             this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
             this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(126, 36);
+            this.toolStripButton5.Size = new System.Drawing.Size(127, 36);
             this.toolStripButton5.Text = "Экспорт в Excel";
             // 
             // toolStripTextBox1
             // 
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Size = new System.Drawing.Size(100, 39);
             this.toolStripTextBox1.Text = "Поиск данных";
@@ -166,6 +168,7 @@
             // 
             // toolStripTextBox2
             // 
+            this.toolStripTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox2.Name = "toolStripTextBox2";
             this.toolStripTextBox2.Size = new System.Drawing.Size(100, 39);
             this.toolStripTextBox2.Text = "Сор. данных";
@@ -208,8 +211,79 @@
             this.dataGridView1.Size = new System.Drawing.Size(944, 303);
             this.dataGridView1.TabIndex = 2;
             // 
+            // кодРодителяDataGridViewTextBoxColumn
+            // 
+            this.кодРодителяDataGridViewTextBoxColumn.DataPropertyName = "Код родителя";
+            this.кодРодителяDataGridViewTextBoxColumn.HeaderText = "Код родителя";
+            this.кодРодителяDataGridViewTextBoxColumn.Name = "кодРодителяDataGridViewTextBoxColumn";
+            // 
+            // фИОМатериDataGridViewTextBoxColumn
+            // 
+            this.фИОМатериDataGridViewTextBoxColumn.DataPropertyName = "ФИО Матери";
+            this.фИОМатериDataGridViewTextBoxColumn.HeaderText = "ФИО Матери";
+            this.фИОМатериDataGridViewTextBoxColumn.Name = "фИОМатериDataGridViewTextBoxColumn";
+            // 
+            // местоРаботыМатериDataGridViewTextBoxColumn
+            // 
+            this.местоРаботыМатериDataGridViewTextBoxColumn.DataPropertyName = "Место работы Матери";
+            this.местоРаботыМатериDataGridViewTextBoxColumn.HeaderText = "Место работы Матери";
+            this.местоРаботыМатериDataGridViewTextBoxColumn.Name = "местоРаботыМатериDataGridViewTextBoxColumn";
+            // 
+            // адрессМатериDataGridViewTextBoxColumn
+            // 
+            this.адрессМатериDataGridViewTextBoxColumn.DataPropertyName = "Адресс Матери";
+            this.адрессМатериDataGridViewTextBoxColumn.HeaderText = "Адресс Матери";
+            this.адрессМатериDataGridViewTextBoxColumn.Name = "адрессМатериDataGridViewTextBoxColumn";
+            // 
+            // фИООтцаDataGridViewTextBoxColumn
+            // 
+            this.фИООтцаDataGridViewTextBoxColumn.DataPropertyName = "ФИО Отца";
+            this.фИООтцаDataGridViewTextBoxColumn.HeaderText = "ФИО Отца";
+            this.фИООтцаDataGridViewTextBoxColumn.Name = "фИООтцаDataGridViewTextBoxColumn";
+            // 
+            // местоРаботыОтцаDataGridViewTextBoxColumn
+            // 
+            this.местоРаботыОтцаDataGridViewTextBoxColumn.DataPropertyName = "Место работы Отца";
+            this.местоРаботыОтцаDataGridViewTextBoxColumn.HeaderText = "Место работы Отца";
+            this.местоРаботыОтцаDataGridViewTextBoxColumn.Name = "местоРаботыОтцаDataGridViewTextBoxColumn";
+            // 
+            // адрессОтцаDataGridViewTextBoxColumn
+            // 
+            this.адрессОтцаDataGridViewTextBoxColumn.DataPropertyName = "Адресс Отца";
+            this.адрессОтцаDataGridViewTextBoxColumn.HeaderText = "Адресс Отца";
+            this.адрессОтцаDataGridViewTextBoxColumn.Name = "адрессОтцаDataGridViewTextBoxColumn";
+            // 
+            // кодРебёнкаDataGridViewTextBoxColumn
+            // 
+            this.кодРебёнкаDataGridViewTextBoxColumn.DataPropertyName = "Код ребёнка";
+            this.кодРебёнкаDataGridViewTextBoxColumn.HeaderText = "Код ребёнка";
+            this.кодРебёнкаDataGridViewTextBoxColumn.Name = "кодРебёнкаDataGridViewTextBoxColumn";
+            // 
+            // номерТелефонаОтцаDataGridViewTextBoxColumn
+            // 
+            this.номерТелефонаОтцаDataGridViewTextBoxColumn.DataPropertyName = "Номер телефона Отца";
+            this.номерТелефонаОтцаDataGridViewTextBoxColumn.HeaderText = "Номер телефона Отца";
+            this.номерТелефонаОтцаDataGridViewTextBoxColumn.Name = "номерТелефонаОтцаDataGridViewTextBoxColumn";
+            // 
+            // номерТелефонаМатериDataGridViewTextBoxColumn
+            // 
+            this.номерТелефонаМатериDataGridViewTextBoxColumn.DataPropertyName = "Номер телефона Матери";
+            this.номерТелефонаМатериDataGridViewTextBoxColumn.HeaderText = "Номер телефона Матери";
+            this.номерТелефонаМатериDataGridViewTextBoxColumn.Name = "номерТелефонаМатериDataGridViewTextBoxColumn";
+            // 
+            // родителиBindingSource
+            // 
+            this.родителиBindingSource.DataMember = "Родители";
+            this.родителиBindingSource.DataSource = this.kindergartenDataSet;
+            // 
+            // kindergartenDataSet
+            // 
+            this.kindergartenDataSet.DataSetName = "KindergartenDataSet";
+            this.kindergartenDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.radioButton5);
             this.groupBox1.Controls.Add(this.radioButton4);
             this.groupBox1.Controls.Add(this.radioButton3);
@@ -277,11 +351,6 @@
             this.radioButton1.Text = "radioButton1";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // kindergartenDataSet
-            // 
-            this.kindergartenDataSet.DataSetName = "KindergartenDataSet";
-            this.kindergartenDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // ребёнокBindingSource
             // 
             this.ребёнокBindingSource.DataMember = "Ребёнок";
@@ -318,74 +387,18 @@
             // 
             this.группаTableAdapter.ClearBeforeFill = true;
             // 
-            // родителиBindingSource
-            // 
-            this.родителиBindingSource.DataMember = "Родители";
-            this.родителиBindingSource.DataSource = this.kindergartenDataSet;
-            // 
             // родителиTableAdapter
             // 
             this.родителиTableAdapter.ClearBeforeFill = true;
             // 
-            // кодРодителяDataGridViewTextBoxColumn
+            // label1
             // 
-            this.кодРодителяDataGridViewTextBoxColumn.DataPropertyName = "Код родителя";
-            this.кодРодителяDataGridViewTextBoxColumn.HeaderText = "Код родителя";
-            this.кодРодителяDataGridViewTextBoxColumn.Name = "кодРодителяDataGridViewTextBoxColumn";
-            // 
-            // фИОМатериDataGridViewTextBoxColumn
-            // 
-            this.фИОМатериDataGridViewTextBoxColumn.DataPropertyName = "ФИО Матери";
-            this.фИОМатериDataGridViewTextBoxColumn.HeaderText = "ФИО Матери";
-            this.фИОМатериDataGridViewTextBoxColumn.Name = "фИОМатериDataGridViewTextBoxColumn";
-            // 
-            // местоРаботыМатериDataGridViewTextBoxColumn
-            // 
-            this.местоРаботыМатериDataGridViewTextBoxColumn.DataPropertyName = "Место работы Матери";
-            this.местоРаботыМатериDataGridViewTextBoxColumn.HeaderText = "Место работы Матери";
-            this.местоРаботыМатериDataGridViewTextBoxColumn.Name = "местоРаботыМатериDataGridViewTextBoxColumn";
-            // 
-            // адрессМатериDataGridViewTextBoxColumn
-            // 
-            this.адрессМатериDataGridViewTextBoxColumn.DataPropertyName = "Адресс Матери";
-            this.адрессМатериDataGridViewTextBoxColumn.HeaderText = "Адресс Матери";
-            this.адрессМатериDataGridViewTextBoxColumn.Name = "адрессМатериDataGridViewTextBoxColumn";
-            // 
-            // фИООтцаDataGridViewTextBoxColumn
-            // 
-            this.фИООтцаDataGridViewTextBoxColumn.DataPropertyName = "ФИО Отца";
-            this.фИООтцаDataGridViewTextBoxColumn.HeaderText = "ФИО Отца";
-            this.фИООтцаDataGridViewTextBoxColumn.Name = "фИООтцаDataGridViewTextBoxColumn";
-            // 
-            // местоРаботыОтцаDataGridViewTextBoxColumn
-            // 
-            this.местоРаботыОтцаDataGridViewTextBoxColumn.DataPropertyName = "Место работы Отца";
-            this.местоРаботыОтцаDataGridViewTextBoxColumn.HeaderText = "Место работы Отца";
-            this.местоРаботыОтцаDataGridViewTextBoxColumn.Name = "местоРаботыОтцаDataGridViewTextBoxColumn";
-            // 
-            // адрессОтцаDataGridViewTextBoxColumn
-            // 
-            this.адрессОтцаDataGridViewTextBoxColumn.DataPropertyName = "Адресс Отца";
-            this.адрессОтцаDataGridViewTextBoxColumn.HeaderText = "Адресс Отца";
-            this.адрессОтцаDataGridViewTextBoxColumn.Name = "адрессОтцаDataGridViewTextBoxColumn";
-            // 
-            // кодРебёнкаDataGridViewTextBoxColumn
-            // 
-            this.кодРебёнкаDataGridViewTextBoxColumn.DataPropertyName = "Код ребёнка";
-            this.кодРебёнкаDataGridViewTextBoxColumn.HeaderText = "Код ребёнка";
-            this.кодРебёнкаDataGridViewTextBoxColumn.Name = "кодРебёнкаDataGridViewTextBoxColumn";
-            // 
-            // номерТелефонаОтцаDataGridViewTextBoxColumn
-            // 
-            this.номерТелефонаОтцаDataGridViewTextBoxColumn.DataPropertyName = "Номер телефона Отца";
-            this.номерТелефонаОтцаDataGridViewTextBoxColumn.HeaderText = "Номер телефона Отца";
-            this.номерТелефонаОтцаDataGridViewTextBoxColumn.Name = "номерТелефонаОтцаDataGridViewTextBoxColumn";
-            // 
-            // номерТелефонаМатериDataGridViewTextBoxColumn
-            // 
-            this.номерТелефонаМатериDataGridViewTextBoxColumn.DataPropertyName = "Номер телефона Матери";
-            this.номерТелефонаМатериDataGridViewTextBoxColumn.HeaderText = "Номер телефона Матери";
-            this.номерТелефонаМатериDataGridViewTextBoxColumn.Name = "номерТелефонаМатериDataGridViewTextBoxColumn";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(535, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "label1";
             // 
             // Form1
             // 
@@ -406,14 +419,14 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.родителиBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kindergartenDataSet)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kindergartenDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ребёнокBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.воспитателиBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.персоналBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.группаBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.родителиBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -461,6 +474,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn кодРебёнкаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn номерТелефонаОтцаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn номерТелефонаМатериDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label1;
     }
 }
 
