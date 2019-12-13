@@ -71,5 +71,12 @@ namespace Kindergarten
                 dataGridView1.DataSource = группаBindingSource;
             }
         }
+
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+            Zaprosi zaprosi = new Zaprosi();
+            zaprosi.Show();
+
+        }
     }
 }
