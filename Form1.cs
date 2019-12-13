@@ -31,5 +31,12 @@ namespace Kindergarten
             this.ребёнокTableAdapter.Fill(this.kindergartenDataSet.Ребёнок);
 
         }
+
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+            Zaprosi zaprosi = new Zaprosi();
+            zaprosi.Show();
+           // this.Hide();
+        }
     }
 }

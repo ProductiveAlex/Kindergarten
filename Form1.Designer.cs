@@ -56,6 +56,7 @@
             this.родителиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kindergartenDataSet = new Kindergarten.KindergartenDataSet();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -70,7 +71,6 @@
             this.группаBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.группаTableAdapter = new Kindergarten.KindergartenDataSetTableAdapters.ГруппаTableAdapter();
             this.родителиTableAdapter = new Kindergarten.KindergartenDataSetTableAdapters.РодителиTableAdapter();
-            this.label1 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -139,12 +139,11 @@
             this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
             this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(127, 36);
+            this.toolStripButton5.Size = new System.Drawing.Size(126, 36);
             this.toolStripButton5.Text = "Экспорт в Excel";
             // 
             // toolStripTextBox1
             // 
-            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Size = new System.Drawing.Size(100, 39);
             this.toolStripTextBox1.Text = "Поиск данных";
@@ -156,6 +155,7 @@
             this.toolStripButton6.Name = "toolStripButton6";
             this.toolStripButton6.Size = new System.Drawing.Size(128, 36);
             this.toolStripButton6.Text = "Запросы к базе";
+            this.toolStripButton6.Click += new System.EventHandler(this.toolStripButton6_Click);
             // 
             // toolStripButton7
             // 
@@ -168,9 +168,8 @@
             // 
             // toolStripTextBox2
             // 
-            this.toolStripTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox2.Name = "toolStripTextBox2";
-            this.toolStripTextBox2.Size = new System.Drawing.Size(100, 39);
+            this.toolStripTextBox2.Size = new System.Drawing.Size(100, 23);
             this.toolStripTextBox2.Text = "Сор. данных";
             // 
             // menuStrip1
@@ -296,6 +295,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Таблицы";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(535, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "label1";
+            // 
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
@@ -390,15 +398,6 @@
             // родителиTableAdapter
             // 
             this.родителиTableAdapter.ClearBeforeFill = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(535, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "label1";
             // 
             // Form1
             // 
