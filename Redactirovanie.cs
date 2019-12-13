@@ -36,7 +36,7 @@ namespace Kindergarten
             UP.Parameters.AddWithValue("Место работы Матери", textBox8.Text);
             UP.Parameters.AddWithValue("Адрес Матери", textBox4.Text);
             UP.Parameters.AddWithValue("ФИО Отца", textBox5.Text);
-            UP.Parameters.AddWithValue("Место работы Отца", textBox6.Text);
+            UP.Parameters.AddWithValue("Место работы Отца", textBox1.Text);
             UP.Parameters.AddWithValue("Адрес Отца", textBox7.Text);
             UP.Parameters.AddWithValue("Номер телефона Отца", textBox9.Text);
             UP.Parameters.AddWithValue("Номер телефона Матери", textBox10.Text);
@@ -45,6 +45,33 @@ namespace Kindergarten
             MessageBox.Show("Данные успешно изменены");
             //  conn.Close();
             f1.РодителиUP();
+        }
+
+        private void Redactirovanie_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+
+            OleDbConnection conn = new OleDbConnection(upform);
+            conn.Open();
+
+            string CmdText = "Update [Родители] SET [ФИО]=[@ФИО], [Дата рождения] = [@Дата рождения], [Адрес] = [@Адрес], [Телефон] = [@Телефон], [Номер группы] = [@Номер группы]" + "Where [Код ребёнка] = [@Код ребёнка]";
+            OleDbCommand UP = new OleDbCommand(CmdText, conn);
+
+            UP.Parameters.AddWithValue("ФИО", textBox11.Text);
+            UP.Parameters.AddWithValue("Дата рождения", textBox12.Text);
+            UP.Parameters.AddWithValue("Адрес", textBox13.Text);
+            UP.Parameters.AddWithValue("Телефон", textBox14.Text);
+            UP.Parameters.AddWithValue("Номер группы", textBox15.Text);
+            
+            UP.ExecuteNonQuery();
+            MessageBox.Show("Данные успешно изменены");
+            //  conn.Close();
+            f1.РебёнокUP();
         }
     }
 }

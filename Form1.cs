@@ -169,14 +169,28 @@ namespace Kindergarten
                 Redactirovanie UR = new Redactirovanie();
                 if (radioButton1.Checked == true)
                 {
-                    UR.textBox2.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-                    UR.textBox8.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                    UR.textBox4.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-                    UR.textBox5.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-                    UR.textBox6.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-                    UR.textBox7.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-                    UR.textBox9.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
-                    UR.textBox10.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+                    UR.textBox7.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                    UR.textBox8.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                    UR.textBox9.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                    UR.textBox10.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+                    UR.textBox1.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+                    UR.textBox2.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+                    UR.textBox4.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+                    UR.textBox5.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
+
+                    if (UR.ShowDialog() == DialogResult.OK)
+                    {
+                        MessageBox.Show("Данные успешно обновлены", "Уведомление", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.РодителиUP();
+                    }
+                }
+                if (radioButton2.Checked == true)
+                {
+                    UR.textBox11.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                    UR.textBox12.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                    UR.textBox13.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                    UR.textBox14.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+                    UR.textBox15.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();                 
 
                     if (UR.ShowDialog() == DialogResult.OK)
                     {

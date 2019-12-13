@@ -60,5 +60,10 @@ namespace Kindergarten
             f1.Show();
             this.Close();
         }
+
+        private void Dobvlenie_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
